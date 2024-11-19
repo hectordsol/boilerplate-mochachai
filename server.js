@@ -9,6 +9,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
+  console.log('Request received at /',__dirname);
   res.sendFile(__dirname + '/views/index.html');
 })
 
